@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS DOCUMENT */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    background-color: #ebebeb;
+    background-image: url(../images/background.jpg);
+}
+
+.container {
+    margin: 0 auto;
+    width: 600px;
+    background-color: #fafafa;
+    padding: 1em;
+    border: #717171 2px solid;
+}
+h1 {
+    color: #ee1139;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    border-bottom: #ee1139 20px solid;
+    padding-bottom: 1rem;
+}
+
+h2
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #3e7be6;
+}
+
+h3
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    color: #1f1f1f;
+    font-family: 'Montserrat', sans-serif;
+}
+.parrafo {
+    color: #414fbd;
+}
+
+video {
+    width: 600px;
+}
+
+img {
+    width: 600px;
+}
+.social {
+    width: 60px;
+}
+
+ /* Aqui inicia navegación  */
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    list-style: none;
+    padding: .5rem 1rem;
+}
+
+nav a {
+     text-decoration: none;
+ }
+
+a {
+    color: #525252;
+ }
+
+nav ul li:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
