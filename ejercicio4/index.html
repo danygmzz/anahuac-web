@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="content" content="EJERCICIO 4, VIVUS .JS">
+    <meta name="author" content="DANIELA GOMEZ VILLALON">
+    <title>EJERCICIO 4</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header> <h1>VIVUS.JS</h1></header>
+        <aside>
+            <ul>
+                <li><a href="https://maxwellito.github.io/vivus/">VIVUS.JS</a></li>
+                <li><a href="https://github.com/maxwellito/vivus">VIVUS GITHUB</a></li>
+                <li><a href="https://www.jsdelivr.com/package/npm/vivus">VIVUS CDN</a></li>
+            </ul>
+        </aside>
+        <main>
+<!-- SECTION 1 -->
+                <h2>SVG DIRECTO</h2>
+                <svg id="burger1" data-name="burger1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 561.46"><defs><style>.cls-1{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:7px;}</style></defs><title>circ</title><rect class="cls-1" x="107.32" y="94.27" width="372.93" height="372.93"/><rect class="cls-1" x="107.32" y="94.27" width="372.93" height="372.93" transform="translate(87.03 -69.08) rotate(15.72)"/><rect class="cls-1" x="107.32" y="94.27" width="372.93" height="372.93" transform="translate(189.51 -112.01) rotate(31.43)"/><rect class="cls-1" x="107.32" y="94.27" width="372.93" height="372.93" transform="translate(299.8 -125.57) rotate(47.15)"/><rect class="cls-1" x="107.32" y="94.27" width="372.93" height="372.93" transform="translate(409.63 -108.75) rotate(62.87)"/><rect class="cls-1" x="107.32" y="94.27" width="372.93" height="372.93" transform="translate(510.8 -62.81) rotate(78.58)"/></svg>
+
+
+<!-- SECTION -->
+                <h2>EN OBJETO</h2>
+                <object id="burger2" type="image/svg+xml" data="images/circ.svg"></object>
+
+<!-- SECTION -->
+                <h2>EN DIV</h2>
+                <div id="burger3"></div>
+                
+            
+        </main>
+    
+        <footer>
+            COPYRIGHT © / Daniela Gómez Villalón
+
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
+
+    <script>
+    new Vivus('burger1', {duration: 200});
+    new Vivus('burger2', {type: 'delayed', duration: 150});
+    new Vivus('burger3', {duration: 100, type: 'scenario-sync', file: 'images/circ.svg'});
+
+    
+    </script>
+    
+</body>
+</html>
