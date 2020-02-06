@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* MEYER RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BOX SIZING */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* MIS ESTILOS */
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: beige;
+  }
+
+#cafe1 {
+      width: 200px;
+      float: left;
+      shape-outside: circle(76px at center center);
+  }
+
+  header {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      top:0;
+      left:0;
+      right:0;
+      z-index: 10000;
+      box-sizing: border-box;
+  }
+
+  p {
+      font-weight: 300;
+  }
+
+  h1{
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+  }
+
+  h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: rgb(94, 63, 17);
+      text-align: center;
+  }
+
+  h1, h2, p, img {
+      padding: .6rem;
+  }
+
+  .container {
+      width: 80vw;
+      margin: 0 auto;
+      background-color: burlywood;
+      padding-top: 100px;
+  }
+
+  p {
+      text-align: justify;
+  }
+
+  #cafe2 {
+      width: 200px;
+      float: left;
+      shape-outside: polygon(38.05% 24.33%, 21.99% 36.9%, 20.29% 47.04%, 8.79% 56.6%, 5.84% 74.02%, 17.05% 89.13%, 45.81% 94.47%, 76.35% 90.82%, 91.39% 81.17%, 96.06% 63.29%, 83.05% 46.92%, 78.67% 32.96%, 61.39% 25.79%);
+      clip-path: polygon(38.05% 24.33%, 21.99% 36.9%, 20.29% 47.04%, 8.79% 56.6%, 5.84% 74.02%, 17.05% 89.13%, 45.81% 94.47%, 76.35% 90.82%, 91.39% 81.17%, 96.06% 63.29%, 83.05% 46.92%, 78.67% 32.96%, 61.39% 25.79%);
+  }
+
+  #cafe3 {
+      float: left;
+      shape-outside: url(../images/png.png);
+  }
+
+  footer {
+      background-color: black;
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: .5rem;
+  }
+
+  main {
+      
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:
+      "a1 a1 a1 a4 a4 a4"
+      "a1 a1 a1 a2 a2 a2"
+      "a3 a3 a3 a2 a2 a2"
+      "a3 a3 a3 . . ." 
+      
+     ;
+  }
+
+  #art1 {
+      grid-area: a1;
+      background-color: wheat;
+      padding: .5rem;
+  }
+
+  #art2 {
+      grid-area: a2;
+      background-color: wheat;
+      padding: .5rem;
+  }
+
+  #art3 {
+      grid-area: a3;
+      background-color: wheat;
+      padding: .5rem;
+  }
+
+  #banner1 {
+      grid-area: a4
+  }
+
+  h3 {
+      font-size: 100px;
+      font-weight: 800;
+      color: rgb(74, 58, 28);
+      text-align: center;
+      padding-top: 4rem;
+  }
