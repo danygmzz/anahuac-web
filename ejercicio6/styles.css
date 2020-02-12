@@ -1,0 +1,167 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat&display=swap');
+
+/* MEYER RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BOX SIZING */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* MIS ESTILOS */
+
+  h1, h2, a {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p, li {
+    font-family: 'Crimson Text', serif;
+  }
+
+  /* CONTAINER */
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: 100px 1fr 1fr 1fr 1fr 200px;
+      gap: 5px;
+      grid-template-areas: 
+      "he he he he he he he he"
+      "ma ma ma ma ma ma . ."
+      "ma ma ma ma ma ma . ."
+      "ma ma ma ma ma ma . ."
+      "ma ma ma ma ma ma . ."
+      "fo fo fo fo fo fo fo fo"
+      ;
+      width: 100%;
+  }
+
+  /* HEADER */
+  header {
+      grid-area: he; 
+      background-color: #ed6a5a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  nav ul {
+        width: 70vw;
+  }
+
+  nav a {
+    color: #e6ebe0;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #cacbc9;
+  }
+
+/* MAIN */
+
+main { 
+  grid-area: ma;
+  background-color: #f4f1bb;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+    width: 23vw;
+    height: 25vh;
+    text-align: center;
+    border-radius: 5px;
+    border: solid #ed6a5a;
+    color: #ed6a5a;
+    margin: .5rem;
+    padding: .5rem;
+}
+
+  /* FOOTER */
+  footer {
+      grid-area: fo;
+      background-color: #9bc1bc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  ul {
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+
+  footer ul {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-evenly;
+      width: 70vw;
+  }
+
+  footer a {
+      color: #5ca4a9;
+      text-decoration: none;
+  }
+
+  footer a:hover {
+    color: #41777b;
+  }
+
+section:nth-child(2) {
+    background-color: white;
+}
