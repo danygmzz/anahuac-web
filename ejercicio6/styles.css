@@ -107,7 +107,7 @@ html {
     text-decoration: none;
 }
 nav a:hover {
-    color: #cacbc9;
+    color: #f29b8f;
   }
 
 /* MAIN */
@@ -164,4 +164,12 @@ section {
 
 section:nth-child(2) {
     background-color: white;
+}
+
+i.fas, i.fab {
+  font-size: 4rem;
+}
+
+i.fas:hover, i.fab:hover {
+  color: #41777b;
 }

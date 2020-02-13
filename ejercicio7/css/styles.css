@@ -1,0 +1,208 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Varela+Round&display=swap');
+
+/* LINKS I MIGHT NEED
+
+https://css-tricks.com/perfect-full-page-background-image/
+https://css-tricks.com/almanac/properties/b/background-color/
+https://dribbble.com/shots/10069734-Creating-Online-Portofolio-Exploration
+
+
+
+    font-family: 'Varela Round', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+
+
+*/
+
+/* MEYER RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BOX SIZING */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+  /* MEDIA QUERY /// GOKULLKRISH GITHUB */
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+	
+  }
+  
+  /* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+	
+  }
+  
+  /* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+	
+	
+  }
+  
+  /* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+	
+	
+  }
+
+  /* MIS ESTILOS  */
+
+html {
+	  background-color: #fdf4e2;
+  }
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 100px 1fr 50px 1fr 1fr 200px;
+    gap: 5px;
+	grid-template-areas:
+	". . . . . . ."
+	". he . . . . ."
+	". ma . . . . ."
+	". . . . . . ."
+	". . . . . . ."
+}
+
+header {
+	grid-area: he;
+	background-color: #ffcb77;
+}
+
+main {
+	grid-area: ma;
+	background-color: #ffcb77;
+	display: flex;
+	
+}
+
+ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+main ul {
+	display: flex;
+	justify-content: space-evenly;
+	width: 20vw;
+}
+
+h1 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 3.5rem;
+	color: #fdf4e2;
+} 
+
+h2 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 2rem;
+	color: #fdf4e2;
+}
+
+i.fas, i.fab {
+	font-size: 2rem;
+	color: #fdfdfd;
+  }
+  
+  i.fas:hover, i.fab:hover {
+	color: #faebcf;
+  }
