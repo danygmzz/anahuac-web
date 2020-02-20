@@ -151,26 +151,32 @@ html {
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	grid-template-rows: 100px 1fr 50px 1fr 1fr 200px;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 100px 1fr 1px 1fr 1fr 200px;
     gap: 5px;
 	grid-template-areas:
-	". . . . . . ."
-	". he . . . . ."
-	". ma . . . . ."
-	". . . . . . ."
-	". . . . . . ."
+	"s1 s1 . . . . . . ."
+	". he . . . . . . ."
+	". ma . . nnn . . . ."
+	". . ppp . . . . . ."
+	". . . . . . . . ."
+	". . . . . . . . ."
+	
 }
 
 header {
 	grid-area: he;
 	background-color: #ffcb77;
+	z-index: 100000;
+	float: left;
 }
 
 main {
 	grid-area: ma;
 	background-color: #ffcb77;
 	display: flex;
+	z-index: 100000;
+	height: 2px;
 	
 }
 
@@ -182,8 +188,9 @@ ul {
 
 main ul {
 	display: flex;
-	justify-content: space-evenly;
-	width: 20vw;
+	justify-content: left;
+	justify-content: space-between;
+	width: 14vw;
 }
 
 h1 {
@@ -206,3 +213,26 @@ i.fas, i.fab {
   i.fas:hover, i.fab:hover {
 	color: #faebcf;
   }
+
+  #fondo1 {
+	  height: 800px;
+  }
+
+  #seccion1 {
+	grid-area: s1;
+	float: left;
+	z-index: 8;
+}
+
+  #planta {
+	height: 285px;
+	grid-area: ppp;
+	z-index: 2;
+}
+
+#ninaimg {
+	height: 458px;
+	grid-area: nnn;
+	z-index: 3;
+}
+
