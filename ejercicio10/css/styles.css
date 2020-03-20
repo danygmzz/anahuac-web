@@ -152,8 +152,8 @@ html {
 
 header {
 	position: relative;
-	left:50px;
-	top:85px;
+	text-align: center;
+	top:450px;
 	z-index: 100000000000;
 }
 
@@ -161,13 +161,13 @@ header {
 h1 {
 	font-family: 'Varela Round', sans-serif;
 	font-size: 2.6rem;
-	color: #fdfdfd;
+	color: #fe6d73;
 } 
 
 h2 {
 	font-family: 'Varela Round', sans-serif;
 	font-size: 2.2rem;
-	color: #fdfdfd;
+	color: #fe6d73;
 }
 
 ul{
@@ -182,38 +182,41 @@ li{
 
 #links {
 	position: relative;
-	left: 50px;
-	top:80px;
+	left: 570px;
+	top:450px;
 	z-index: 10000001;
 	
 }
 
 i.fas, i.fab {
 	font-size: 2rem;
-	color: #fdfdfd;
+	color: #fe6d73;
   }
   
   i.fas:hover, i.fab:hover {
-	color: #faebcf;
+	color: #ed4d53;
   }
 
 #seccion1 {
 	position: absolute;
-	top:0px;
-	width: 56%;
-	object-fit: cover;
-
+	top:240px;
+	left: 120px;
+	width: 20%;
 	z-index: 10000000;
+}
+
+#imagenventana {
+	position: absolute;
+	width: 30%;
+	top:100px;
+	left:35%;
+	z-index: 10000001 ;
 }
 
 #imagenfondo {
 	position: absolute;
-	width: 100%;
-	top:0px;
-	left:0px;
+	width: 40%;
+	top:40px;
+	left:600px;
 	z-index: 1;
-}
-
-.container {
-	width: 1280px;
 }

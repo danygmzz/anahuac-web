@@ -145,47 +145,64 @@ html {
 
   /* MIS ESTILOS  */
 
-html { 
-	background-color: #fdf4e2;
+html {
+	  background-color: #fdf4e2;
   }
 
+.container {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 100px 1fr 1px 1fr 1fr 200px;
+    gap: 5px;
+	grid-template-areas:
+	"s1 s1 . . . . . . ."
+	". he . . . . . . ."
+	". ma . . nnn . . . ."
+	". . ppp . . . . . ."
+	". . . . . . . . ."
+	". . . . . . . . ."
+	
+}
 
 header {
-	position: relative;
-	left:50px;
-	top:85px;
-	z-index: 100000000000;
+	grid-area: he;
+	background-color: #ffcb77;
+	z-index: 100000;
+	float: left;
+}
+
+main {
+	grid-area: ma;
+	background-color: #ffcb77;
+	display: flex;
+	z-index: 100000;
+	height: 2px;
+	
+}
+
+ul {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 
+main ul {
+	display: flex;
+	justify-content: left;
+	justify-content: space-between;
+	width: 14vw;
+}
+
 h1 {
 	font-family: 'Varela Round', sans-serif;
-	font-size: 2.6rem;
-	color: #fdfdfd;
+	font-size: 3.5rem;
+	color: #fdf4e2;
 } 
 
 h2 {
 	font-family: 'Varela Round', sans-serif;
-	font-size: 2.2rem;
-	color: #fdfdfd;
-}
-
-ul{
-	display: flex;
-	justify-content: left;
-}
-
-li{
-	padding-right: 30px;
-}
-
-
-#links {
-	position: relative;
-	left: 50px;
-	top:80px;
-	z-index: 10000001;
-	
+	font-size: 2rem;
+	color: #fdf4e2;
 }
 
 i.fas, i.fab {
@@ -197,23 +214,25 @@ i.fas, i.fab {
 	color: #faebcf;
   }
 
-#seccion1 {
-	position: absolute;
-	top:0px;
-	width: 56%;
-	object-fit: cover;
+  #fondo1 {
+	  height: 800px;
+  }
 
-	z-index: 10000000;
+  #seccion1 {
+	grid-area: s1;
+	float: left;
+	z-index: 8;
 }
 
-#imagenfondo {
-	position: absolute;
-	width: 100%;
-	top:0px;
-	left:0px;
-	z-index: 1;
+  #planta {
+	height: 285px;
+	grid-area: ppp;
+	z-index: 2;
 }
 
-.container {
-	width: 1280px;
+#ninaimg {
+	height: 458px;
+	grid-area: nnn;
+	z-index: 3;
 }
+
