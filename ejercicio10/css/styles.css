@@ -170,6 +170,12 @@ h2 {
 	color: #fe6d73;
 }
 
+h3 {
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1rem;
+	color: #fe6d73;
+}
+
 ul{
 	display: flex;
 	justify-content: left;
@@ -219,4 +225,12 @@ i.fas, i.fab {
 	top:40px;
 	left:600px;
 	z-index: 1;
+}
+
+a {
+	color: #e92d34;
+}
+
+a:hover {
+	color: #fe6d73;
 }
