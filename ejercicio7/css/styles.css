@@ -215,5 +215,7 @@ i.fas, i.fab {
 }
 
 .container {
-	width: 1280px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
