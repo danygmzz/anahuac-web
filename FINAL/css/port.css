@@ -1,0 +1,388 @@
+/*************** CSS RESET *****************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************** MIS ESTILOS *****************/
+
+body {
+    font-family: 'DM Mono', monospace;
+    background-color: black;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+h5 {
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 30px ;
+}
+
+p {
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a i {
+    font-size: 22px;
+    color: white;
+}
+
+section {
+    padding-top: 120px;
+}
+
+/*************** CLASES *****************/
+
+.content-center {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.bg-light-grey {
+    margin-top: 50px;
+    background-color: #f5f5f5;
+}
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+.topmargin-lg {
+    margin-top: 40px !important; 
+}
+
+.topmargin-sm {
+    margin-top: 30px !important;
+}
+
+.topmargin-xs {
+    margin-top: 15px !important;
+}
+
+/*************** BOTONES *****************/
+
+.btn {
+    font-size: 14px;
+    padding: 15px 26px;
+    min-width: 160px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.btn-light {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+.btn-dark {
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid #1a1a1a;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #ffffff;
+}
+
+.btn-transparent:hover {
+    color: white;
+}
+
+.btn i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.btn2 {
+    margin-left: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.text-dark {
+    color: #1a1a1a;
+}
+
+/*************** NAVIGATION BAR *****************/
+
+.navbar {
+    background-color: black;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
+    min-height: 100px;
+}
+
+.nav-link {
+    color: white;
+    padding: 0 30px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.logo-brand {
+    min-width: 160px;
+    max-width: 180px;
+}
+
+.navbar-toggler {
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.content-center {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+/*************** FOOTER *****************/
+
+#footer {
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+#footer a {
+    color: white;
+}
+
+#footer a:hover {
+    color: white;
+}
+
+#footer .list-inline .list-inline-item {
+    padding: 10px 15px;
+}
+
+
+/*************** MASONRY GALLERY STYLES *****************/
+
+.masonry {
+
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+
+    -moz-column-gap: 1.5vw;
+    -webkit-column-gap: 1.5vw;
+    column-gap: 1.5vw;
+
+    margin: 1vw;
+}
+
+.item {
+    width: 100%;
+
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
+}
+
+.item img {
+    width: 100%;
+}
+
+
+/*************** EFECTO HOVER *****************/
+
+.mask h3 {
+    font-size: 30px;
+    color: white;
+    font-family: 'DM Mono', monospace;
+}
+
+.view {
+    position: relative; 
+    float: left;
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.view img {
+    display: block;
+    position: relative;
+}
+
+.view h3 {
+    font-family: 'DM Mono', monospace;
+    margin-top: 20px;
+}
+
+.view p {
+    position: relative;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px; 
+    color: #c4c4c4;
+    padding: 10px 20px 20px; 
+    text-align: center;
+}
+
+.view a.info {  
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;  
+    text-decoration: none;
+    padding: 7px 14px;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+}
+
+.view .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    height: 100%; 
+}
+
+/*************** OCULTAR/MOSTRAR *****************/
+
+.view .mask {
+    opacity: 0;
+    background-color: #1c1c1c;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;;
+}
+
+.view .mask:hover {
+    opacity: 1;
+}
+
+/*************** FLEX BOX *****************/
+
+.main {
+    margin: 40px 0;
+}
+
+.main .thumb {
+    margin-bottom: 20px;
+}
+
+.main .thumb img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/*************** TEXTILLATE *****************/
+
+.seccion0 h2 {
+    padding-top: -100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+span {
+    opacity: 0;
+}
+
+span.fade{
+    direction: rtl !important;
+    transition: all 0.4s linear !important;
+    opacity: 1 !important;
+    animation-iteration-count: infinite;
+}
+
+.text {
+    color: white;
+    padding: 50px 50px ;
+}
+
+.text p {
+    margin-top: 20px;
+}
+
+.text b {
+    color: rgb(213, 213, 213);
+}
+
+
+/*************** IFRAME YOUTUBE VIDEOS *****************/
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/*************** MEDIA QUERIES *****************/
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+/* LARGE CELLPHONES AND TABLETS */
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
